@@ -1,0 +1,105 @@
+repos:
+
+  - repo: local
+    hooks:
+    - id: echo
+      name: echo 
+      language: system
+      entry: echo 
+      disable: false
+      verbose: true
+      pass_filenames: true
+
+  - repo: local
+    hooks:
+    - id: docformatter
+      name: docformatter 
+      language: system
+      entry: docformatter 
+      files: \.pyi?$
+      pass_filenames: true
+
+  - repo: local
+    hooks:
+    - id: black
+      name: black
+      language: system
+      entry: black 
+      files: \.pyi?$
+      pass_filenames: true
+
+  - repo: local
+    hooks:
+    - id: isort
+      name: isort
+      language: system
+      entry: isort 
+      files: \.pyi?$
+      pass_filenames: true
+
+  - repo: local
+    hooks:
+    - id: flake8
+      name: flake8
+      language: system
+      entry: flake8helled 
+      pass_filenames: true
+
+  - repo: local
+    hooks:
+    - id: pytest
+      name: pytest
+      language: system
+      entry: pytest
+      pass_filenames: false
+
+  - repo: local
+    hooks:
+    - id: extract-docs
+      name: extract-docs
+      language: system
+      entry: sphinx-apidoc --separate --module-first --force -o docs/src src/{{pkg}}
+      pass_filenames: false
+
+  - repo: local
+    hooks:
+    - id: build-docs
+      name: build-docs
+      language: system
+      entry: sphinx-build docs/src docs/build
+      pass_filenames: false
+
+  # TODO: export not ready
+  # - repo: local
+  #   hooks:
+  #   - id: reqs
+  #     name: Export requeriments.txt
+  #     language: system
+  #     pass_filenames: false
+  #     entry: poetry export --without-hashes -o requirements.txt
+  #     files: ^(pyproject.toml|poetry.lock)$
+
+  # - repo: local
+  #   hooks:
+  #   - id: reqs
+  #     name: Export requeriments.dev.txt
+  #     language: system
+  #     pass_filenames: false
+  #     entry: poetry export --dev --without-hashes -o requirements.dev.txt
+  #     files: ^(pyproject.toml|poetry.lock)$
+
+  # - repo: local
+  #   hooks:
+  #   - id: build
+  #     name: Build package
+  #     language: system
+  #     pass_filenames: false
+  #     entry: poetry build
+
+  # - repo: local
+  #   hooks:
+  #   - id: setup.py
+  #     name: Export setup.py
+  #     language: system
+  #     pass_filenames: false
+  #     entry: bash -c "tar -xvf dist/*.tar.gz --wildcards --no-anchored '*/setup.py' --strip=1"
