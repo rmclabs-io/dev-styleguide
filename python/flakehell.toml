@@ -1,6 +1,10 @@
 [tool.flakehell]
 format = "colored"
 max_line_length = 79
+exclude = [
+  # self-managed files should not be checked
+  "poetry.lock",    
+]
 per-file-ignores = [
   "tests/*.py: S101,D100,D101,D103,D104",  # tests without documentation, allow asserts
 ]
