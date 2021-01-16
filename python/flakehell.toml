@@ -60,3 +60,9 @@ flake8-bandit = [
 flake8-darglint = [
   "-DAR101",
 ]
+pylint = [
+  "C0115",
+  "C0115",
+  "C0116",
+  "C0116",
+]
