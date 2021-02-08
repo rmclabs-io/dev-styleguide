@@ -1,8 +1,8 @@
 [tool.isort]
-extends = "https://raw.githubusercontent.com/rmclabs-io/dev-styleguide/main/python/isort.toml"
+__extends = "https://raw.githubusercontent.com/rmclabs-io/dev-styleguide/main/python/isort.toml"
 
 [tool.black]
-extends = "https://raw.githubusercontent.com/rmclabs-io/dev-styleguide/main/python/black.toml"
+__extends = "https://raw.githubusercontent.com/rmclabs-io/dev-styleguide/main/python/black.toml"
 
 [tool.flakehell]
-extends = "https://raw.githubusercontent.com/rmclabs-io/dev-styleguide/main/python/flakehell.toml"
+__extends = "https://raw.githubusercontent.com/rmclabs-io/dev-styleguide/main/python/flakehell.toml"
