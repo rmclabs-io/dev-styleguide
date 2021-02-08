@@ -5,4 +5,4 @@ extends = "https://raw.githubusercontent.com/rmclabs-io/dev-styleguide/main/pyth
 extends = "https://raw.githubusercontent.com/rmclabs-io/dev-styleguide/main/python/black.toml"
 
 [tool.flakehell]
-"https://raw.githubusercontent.com/rmclabs-io/dev-styleguide/main/python/flakehell.toml"
+extends = "https://raw.githubusercontent.com/rmclabs-io/dev-styleguide/main/python/flakehell.toml"
