@@ -40,7 +40,8 @@ pep8-naming = [
 ]
 pycodestyle = [
   "+*",
-  "-E501"  # pylint duplicate
+  "-E501",  # pylint duplicate
+  "-E203", # false positives on list slice
 ]
 pyflakes = ["+*"]
 pylint = ["+*"]
