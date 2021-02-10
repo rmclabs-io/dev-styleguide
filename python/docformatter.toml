@@ -1,0 +1,3 @@
+[tool.docformatter]
+blank=true
+recursive=true
