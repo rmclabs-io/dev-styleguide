@@ -6,9 +6,6 @@ exclude = [
   "poetry.lock",
   "./.venv",
 ]
-per-file-ignores = [
-  "tests/*.py: S101,D100,D101,D103,D104",  # tests without documentation, allow asserts
-]
 ignore = [
   "F401", "E501"  # pylint takes care of these
 ]
@@ -47,6 +44,17 @@ pycodestyle = [
 pyflakes = ["+*"]
 pylint = ["+*"]
 pandas-dev = ["+*"]
+
+[tool.flakehell.exceptions."docs/src/conf.py"]
+flake8-eradicate = [
+  "-E800",
+]
+flake8-docstrings = [
+  "-D100",
+]
+flake8-builtins = [
+  "-A001", # variable "copyright" is shadowing a python builtin -> sphinx wants it
+]
 
 [tool.flakehell.exceptions."tests/"]
 flake8-docstrings = [
