@@ -59,7 +59,9 @@ flake8-docstrings = [
 flake8-builtins = [
   "-A001", # variable "copyright" is shadowing a python builtin -> sphinx wants it
 ]
-
+pylint = [
+  "-*",  # completely disable pylint for sphinx config
+]
 [tool.flakehell.exceptions."tests/"]
 flake8-docstrings = [
   "-D100",
