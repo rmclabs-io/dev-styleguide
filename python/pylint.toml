@@ -1,5 +1,7 @@
 [tool.pylint.format]
 ignore-long-lines = '\s*(# )?<?(?:http|ftp)s?://\S+>?'
-
+good-names = [
+  "fp",  # too comon for `with open(...) as fp:` constructs
+]
 [tool.pylint.logging]
 logging-format-style="new"
