@@ -11,4 +11,4 @@ __extends = "https://raw.githubusercontent.com/rmclabs-io/dev-styleguide/main/py
 __extends = "https://raw.githubusercontent.com/rmclabs-io/dev-styleguide/main/python/flakehell.toml"
 
 [tool.pylint]
-__extends = "https://raw.githubusercontent.com/rmclabs-io/dev-styleguide/main/python/flakehell.toml"
+__extends = "https://raw.githubusercontent.com/rmclabs-io/dev-styleguide/main/python/pylint.toml"
