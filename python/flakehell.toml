@@ -47,6 +47,7 @@ pylint = [
   "+*",
   "-E1136",  # disabled for python3.9, at least until support for 3.9 lands. See https://github.com/PyCQA/pylint/issues/3882
   "-C0114",  # flake8-docstrings duplicate
+  "-W0611",  # pyflakes duplicate
 ]
 pandas-dev = ["+*"]
 
