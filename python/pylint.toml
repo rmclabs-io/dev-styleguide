@@ -2,4 +2,4 @@
 ignore-long-lines = '\s*(# )?<?(?:http|ftp)s?://\S+>?'
 
 [tool.pylint.logging]
-logging-format-style=new
+logging-format-style="new"
