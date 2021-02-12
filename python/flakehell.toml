@@ -43,7 +43,10 @@ pycodestyle = [
   "-E722",  # bugbear duplicate
 ]
 pyflakes = ["+*"]
-pylint = ["+*"]
+pylint = [
+  "+*",
+  "-E1136",  # disabled for python3.9, at least until support for 3.9 lands. See https://github.com/PyCQA/pylint/issues/3882
+]
 pandas-dev = ["+*"]
 
 [tool.flakehell.exceptions."docs/src/conf.py"]
