@@ -57,6 +57,10 @@ flake8-eradicate = [
 ]
 flake8-docstrings = [
   "-D100",
+  "-D101",
+  "-D102",
+  "-D103",
+  "-D104",
 ]
 flake8-builtins = [
   "-A001", # variable "copyright" is shadowing a python builtin -> sphinx wants it
