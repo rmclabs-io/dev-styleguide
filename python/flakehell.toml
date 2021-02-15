@@ -16,6 +16,7 @@ docstring_style = "google"  # darglint
 flake8-bandit = [
   "+*",
   "-S322",  # input for python2, no problem
+  "-S404",  # control should be performed on subprocess usage, on import is useless
 ]
 flake8-bugbear = ["+*"]
 flake8-builtins = ["+*"]
