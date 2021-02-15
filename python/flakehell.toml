@@ -6,9 +6,6 @@ exclude = [
   "poetry.lock",
   "./.venv",
 ]
-ignore = [
-  "F401", "E501"  # pylint takes care of these
-]
 docstring-convention = "google"  # flake8-docstrings
 docstring_style = "google"  # darglint
 
