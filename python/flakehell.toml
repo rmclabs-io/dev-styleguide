@@ -52,7 +52,7 @@ pylint = [
   "-C0114",  # flake8-docstrings duplicate
   "-W0611",  # pyflakes duplicate
 ]
-pandas-dev = ["+*"]
+pandas-vet = ["+*"]
 
 [tool.flakehell.exceptions."docs/src/conf.py"]
 flake8-eradicate = [
