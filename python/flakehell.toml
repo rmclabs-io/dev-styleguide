@@ -39,6 +39,7 @@ pycodestyle = [
   "-E203",  # false positives on list slice
   "-E722",  # bugbear duplicate
   "-E402",  # isort duplicate
+  "-W503",  # black conflict, looks ok
 ]
 pyflakes = [
   "+*",
