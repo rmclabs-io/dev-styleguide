@@ -32,6 +32,7 @@ mccabe = ["+*"]
 pep8-naming = [
   "+*",
   "-N805",  # pylint duplicate
+  "-N801",  # pylint dupe
 ]
 pycodestyle = [
   "+*",
