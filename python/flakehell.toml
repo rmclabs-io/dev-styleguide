@@ -21,7 +21,8 @@ flake8-comprehensions = ["+*"]
 flake8-darglint = ["+*"]
 flake8-docstrings = [
   "+*",
-  "-D101",  # black pylint dupe
+  "-D101",  # pylint dupe
+  "-D103",  # pylint dupe
   "-D202",  # black conflict
   "-D412",  # we do want lines between header and contents. See https://github.com/PyCQA/pydocstyle/issues/412
 ]
