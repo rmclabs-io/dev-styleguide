@@ -1,0 +1,16 @@
+name: "Check solved issues"
+on:
+  schedule:
+  - cron: "0 0 * * *"
+
+jobs:
+  stale:
+    runs-on: ubuntu-20.04
+    steps:
+
+      # Runs a single command using the runners shell
+      - name: Run a one-line script
+        run: |
+          curl \
+            -H "Accept: application/vnd.github.v3+json" \
+            https://api.github.com/repos/deppen8/pandas-vet/issues/106 | grep state | grep open
