@@ -55,6 +55,7 @@ pylint = [
 pandas-vet = [
   "+*",
   "-PD011", # too many false positives (eg dict().values()). See https://github.com/deppen8/pandas-vet/issues/106
+  "-PD005",  # https://github.com/deppen8/pandas-vet/issues/108
 ]
 
 [tool.flakehell.exceptions."docs/src/conf.py"]
