@@ -99,3 +99,8 @@ pylint = [
   "-C0116",
   "-R0201",
 ]
+
+[tool.flakehell.exceptions."tests/bdd"]
+pylint = [
+  "-E0611",  # avoid pylint false positive - eg from behave import when
+]
